@@ -29,3 +29,5 @@ Unsupervised Learning: Uses unlabeled data as input with no feedback mechanism. 
 Logistic regression measures the relationship between the dependent variable (our label of what we want to predict) and one or more independent variables (our features) by estimating probability using its underlying logistic function (sigmoid).
 
 ![image](https://user-images.githubusercontent.com/26432753/90569620-1b79a880-e1a6-11ea-8030-879e3fd2891d.png)
+
+Useful Link: https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
