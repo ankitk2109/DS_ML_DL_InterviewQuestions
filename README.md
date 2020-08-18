@@ -30,4 +30,6 @@ Logistic regression measures the relationship between the dependent variable (ou
 
 ![image](https://user-images.githubusercontent.com/26432753/90569620-1b79a880-e1a6-11ea-8030-879e3fd2891d.png)
 
-Useful Link: https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
+Useful Link: 
+  * https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
+  * https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148
