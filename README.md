@@ -11,7 +11,8 @@ Traditionally, software engineering combined human created rules with data to cr
 
 To learn the rules governing a phenomenon, machines have to go through a learning process, trying different rules and learning from how well they perform. Hence, why it’s known as Machine Learning.
 
-![image](https://user-images.githubusercontent.com/38240162/90568575-13b90480-e1a4-11ea-931b-135ab5be3322.png)
+![image](https://user-images.githubusercontent.com/26432753/90695375-37e31700-e272-11ea-82a4-8a0e7023950e.png)
+
 
 **2. What is Supervised and Unsupervised Learning?**
 
@@ -30,6 +31,18 @@ Logistic regression measures the relationship between the dependent variable (ou
 
 ![image](https://user-images.githubusercontent.com/26432753/90569620-1b79a880-e1a6-11ea-8030-879e3fd2891d.png)
 
-Useful Link: 
+Useful Links: 
   * https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
   * https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148
+  
+ 
+**4. What is a Decision Tree?**
+
+* It is supervised machine learning technique, which can do classification and regression tasks. It is also know as Classification and Regression Trees(CART) algorithm. It formulates the knowledge into hierarchichal structure which are easy to interpret.
+
+* Decision trees are build in two steps.
+  * Induction: Process of building the tree
+  * Pruning: Removes the unnecessary branches or the branches that do not contribute to the predictive power of classification. It also helps in avoiding overfitting or rigid boundaries.
+
+Useful Links:
+  * https://towardsdatascience.com/a-guide-to-decision-trees-for-machine-learning-and-data-science-fe2607241956
