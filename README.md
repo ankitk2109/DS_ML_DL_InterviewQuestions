@@ -46,3 +46,6 @@ Useful Links:
 
 Useful Links:
   * https://towardsdatascience.com/a-guide-to-decision-trees-for-machine-learning-and-data-science-fe2607241956
+  * https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
+  *  How to do regression in Decision tree: https://saedsayad.com/decision_tree_reg.htm#:~:text=The%20ID3%20algorithm%20can%20be,Gain%20with%20Standard%20Deviation%20Reduction.&text=A%20decision%20tree%20is%20built,with%20similar%20values%20(homogenous).
+  
