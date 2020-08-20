@@ -49,3 +49,16 @@ Useful Links:
   * https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
   *  How to do regression in Decision tree: https://saedsayad.com/decision_tree_reg.htm#:~:text=The%20ID3%20algorithm%20can%20be,Gain%20with%20Standard%20Deviation%20Reduction.&text=A%20decision%20tree%20is%20built,with%20similar%20values%20(homogenous).
   
+  
+**5. What is Random forest?**
+The random forest is a model made up of many decision trees. Rather than just simply averaging the prediction of trees (which we could call a “forest”), this model uses two key concepts that gives it the name random:
+  1. Random sampling of training data points when building trees: The samples are drawn with replacement, known as __bootstrapping__. While testing the model predictions are made by averaging the predictions of each decision tree. This process of random sampling and aggregating the result is know as __bootstrap aggregating__ or __bagging__.
+  
+  2. Random subsets of features considered when splitting nodes: The other main concept in the random forest is that only a subset of all the features are considered for splitting each node in each decision tree. Generally this is set to sqrt(n_features) for classification meaning that if there are 16 features, at each node in each tree, only 4 random features will be considered for splitting the node.
+  
+  __The random forest combines hundreds or thousands of decision trees, trains each one on a slightly different set of the observations, splitting nodes in each tree considering a limited number of the features. The final predictions of the random forest are made by averaging the predictions of each individual tree__
+
+
+Useful links:
+  * https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76
+  * https://towardsdatascience.com/understanding-random-forest-58381e0602d2
