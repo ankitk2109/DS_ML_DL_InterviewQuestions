@@ -66,6 +66,10 @@ Useful links:
 
 **6. Bias-Variance tradeoff?**
 
+https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
+
+https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
+
 What is bias?
 
 * Bias is the difference between the average prediction of our model and the correct value which we are trying to predict. Model with high bias pays very little attention to the training data and oversimplifies the model. It always leads to high error on training and test data.
