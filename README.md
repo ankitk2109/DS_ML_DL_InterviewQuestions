@@ -66,10 +66,6 @@ Useful links:
 
 **6. Bias-Variance tradeoff?**
 
-https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
-
-https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
-
 What is bias?
 
 * Bias is the difference between the average prediction of our model and the correct value which we are trying to predict. Model with high bias pays very little attention to the training data and oversimplifies the model. It always leads to high error on training and test data.
@@ -89,3 +85,18 @@ This tradeoff in complexity is why there is a tradeoff between bias and variance
 ![image](https://user-images.githubusercontent.com/38240162/91093492-6c2f4c80-e651-11ea-9560-0aea750c3bdd.png)
 
 ![image](https://user-images.githubusercontent.com/38240162/91093530-7c472c00-e651-11ea-8c70-98d2ebd3bb85.png)
+
+Useful Links:
+ * https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
+ * https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
+ 
+**7. What is Naive Bayes Algorithm?**
+Using Bayes theorem, we can find the probability of A happening, given that B has occurred. Here, B is the evidence and A is the hypothesis. The assumption made here is that the predictors/features are independent. That is presence of one particular feature does not affect the other. Hence it is called naive.
+
+![image](https://user-images.githubusercontent.com/26432753/91096656-4789a380-e656-11ea-814d-2edb84ed0ba0.png)
+
+Conclusion:
+* Naive Bayes algorithms are mostly used in sentiment analysis, spam filtering, recommendation systems etc. They are fast and easy to implement but their biggest disadvantage is that the requirement of predictors to be independent. In most of the real life cases, the predictors are dependent, this hinders the performance of the classifier.
+
+Useful Links:
+ * https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c
