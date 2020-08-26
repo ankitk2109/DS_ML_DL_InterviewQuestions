@@ -100,3 +100,33 @@ Conclusion:
 
 Useful Links:
  * https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c
+ 
+**8. Handling Imbalanced Data?**
+
+1. Use the right evaluation metrics.
+2. Resample the training set: Under Sampling, Over Sampling
+3. Use K-fold Cross-Validation in the right way
+4. Ensemble different resampled datasets
+5. Resample with different ratios
+
+Useful Links:
+ * https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
+ * https://www.researchgate.net/post/How_10-fold_cross_validation_helps_to_handle_the_imbalance_data_set
+ 
+**9. What is k-fold cross Validation?**
+ Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.
+ Cross-validation is primarily used in applied machine learning to estimate the skill of a machine learning model on unseen data
+ 
+ The general procedure is as follows:
+  * Shuffle the dataset randomly.
+  * Split the dataset into k groups
+  * For each unique group:
+    - Take the group as a hold out or test data set
+    - Take the remaining groups as a training data set
+    - Fit a model on the training set and evaluate it on the test set
+    - Retain the evaluation score and discard the model
+  * Summarize the skill of the model using the sample of model evaluation scores
+
+ Useful Links:
+ * https://machinelearningmastery.com/k-fold-cross-validation/
+ * https://stats.stackexchange.com/questions/416553/can-k-fold-cross-validation-cause-overfitting
