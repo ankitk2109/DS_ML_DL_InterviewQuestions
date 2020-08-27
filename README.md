@@ -130,3 +130,18 @@ Useful Links:
  Useful Links:
  * https://machinelearningmastery.com/k-fold-cross-validation/
  * https://stats.stackexchange.com/questions/416553/can-k-fold-cross-validation-cause-overfitting
+ 
+**10. What is Ensemble learning? Explain Bagging and Bossting.**
+
+Ensemble Learning: It is the art of combining diverse set of learners (individual models) together to improvise on the stability and predictive power of the model
+
+Bagging and Boosting get N learners by generating additional data in the training stage. N new training data sets are produced by random sampling with replacement from the original set.
+
+Bagging: A Bagging classifier is an ensemble meta-estimator that fits base classifiers each on random subsets of the original dataset and then aggregate their individual predictions (either by voting or by averaging) to form a final prediction. If samples are drawn with replacement, then the method is known as Bagging.
+
+Boosting: The term 'Boosting' refers to a family of algorithms which converts weak learner to strong learners. Boosting is an ensemble method for improving the model predictions of any given learning algorithm. The idea of boosting is to train weak learners sequentially, each trying to correct its predecessor.
+
+![image](https://user-images.githubusercontent.com/38240162/91494368-a21e3c00-e8b0-11ea-95e1-8e9da5e7c835.png)
+
+Useful Links:
+ * https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/
