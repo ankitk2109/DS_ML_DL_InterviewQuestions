@@ -145,3 +145,18 @@ Boosting: The term 'Boosting' refers to a family of algorithms which converts we
 
 Useful Links:
  * https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/
+ 
+**11. Explain Accuracy, Precision, Recall, ROC, F1, Confusion Matrix, RMSE?**
+
+1. Accuracy : the proportion of the total number of predictions that were correct.
+2. Positive Predictive Value or Precision : the proportion of positive cases that were correctly identified.
+3. Negative Predictive Value : the proportion of negative cases that were correctly identified.
+4. Sensitivity or Recall : the proportion of actual positive cases which are correctly identified.
+5. Specificity : the proportion of actual negative cases which are correctly identified
+6. F1 Score: F1-Score is the harmonic mean of precision and recall values for a classification problem. 
+7. RMSE: It is the most popular evaluation metric used in regression problems. It follows an assumption that error are unbiased and follow a normal distribution. As compared to mean absolute error, RMSE gives higher weightage and punishes large errors.
+8. ROC: The ROC curve is the plot between sensitivity(TPR) and FPR
+
+Useful Links:
+ * https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/
+ * https://medium.com/@MohammedS/performance-metrics-for-classification-problems-in-machine-learning-part-i-b085d432082b#:~:text=We%20can%20use%20classification%20performance,primarily%20used%20by%20search%20engines.
