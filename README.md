@@ -160,3 +160,20 @@ Useful Links:
 Useful Links:
  * https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/
  * https://medium.com/@MohammedS/performance-metrics-for-classification-problems-in-machine-learning-part-i-b085d432082b#:~:text=We%20can%20use%20classification%20performance,primarily%20used%20by%20search%20engines.
+ 
+**12. Explain K-Means Algorithm?**
+Kmeans algorithm is an iterative algorithm that tries to partition the dataset into K pre-defined distinct non-overlapping subgroups (clusters) where each data point belongs to only one group. It tries to make the intra-cluster data points as similar as possible while also keeping the clusters as different (far) as possible. 
+
+The way kmeans algorithm works is as follows:
+ 1. Specify number of clusters K.
+ 2. Initialize centroids by first shuffling the dataset and then randomly selecting K data points for the centroids without replacement.
+ 3. Keep iterating until there is no change to the centroids. i.e assignment of data points to clusters isn’t changing.
+ 
+Evaluation Method:
+ * Elbow method
+ * Silhouette analysis
+
+Useful Links:
+ * https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/
+ * https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a
+
