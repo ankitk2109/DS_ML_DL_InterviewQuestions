@@ -177,3 +177,20 @@ Useful Links:
  * https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/
  * https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a
 
+
+**13. What is word embedding and How does Word2Vec works?**
+
+Before we understand what is word embedding we need to understand what exactly is embedding and why do we need them?
+ * On a very high level we can say that word embedding is a vector representation of the words where each value in the vector has some weight. 
+ * One hot encoding is another way to encode the words. But if we try to visualize those encodings, where each occupies a dimension and has nothing to do with the rest of the words. For example word "Hello" and "Hi" as different as "day" and "Country" which is not true.
+ * One hot encoding limitations:
+   - High dimensional space and sparse:  Feature vector grows with the vocabulary size
+ * Benefits of word embedding: 
+   - Low-dimensional and dense: Usually between 50-600 dimension
+ * The main objective is to have words with similar context occupy close spatial positions. Mathematically, the cosine of the angle between such vectors should be close to 1, i.e. angle close to 0.
+
+Useful Links:
+ * Complete post: https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
+ * char2vec Repo: https://github.com/IntuitionEngineeringTeam/chars2vec
+ * Word2Vector vs One-hot: https://www.quora.com/What-is-the-difference-between-using-word2vec-vs-one-hot-embeddings-as-input-to-classifiers
+
