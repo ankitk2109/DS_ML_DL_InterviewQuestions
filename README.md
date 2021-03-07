@@ -181,7 +181,7 @@ Useful Links:
 **13. What is word embedding and How does Word2Vec works?**
 
 Before we understand what is word embedding we need to understand what exactly is embedding and why do we need them?
- * On a very high level we can say that word embedding is a vector representation of the words where each value in the vector has some weight. 
+ * On a very high level we can say that word embedding is a vector representation of the words where each value in the vector has some weight. Also it can be described as, a learned representation for text where words that have the same meaning have a similar representation.
  * One hot encoding is another way to encode the words. But if we try to visualize those encodings, where each occupies a dimension and has nothing to do with the rest of the words. For example word "Hello" and "Hi" are as different as "day" and "Country" which is not true.
  * One hot encoding limitations:
    - High dimensional space and sparse:  Feature vector grows with the vocabulary size
@@ -211,4 +211,8 @@ Useful Links:
  * Complete post: https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
  * char2vec Repo: https://github.com/IntuitionEngineeringTeam/chars2vec
  * Word2Vector vs One-hot: https://www.quora.com/What-is-the-difference-between-using-word2vec-vs-one-hot-embeddings-as-input-to-classifiers
+ * Implementing Word Embedding using Keras: https://www.youtube.com/watch?v=TsXR7_vtusQ
+ * Word Embedding - Natural Language Processing| Deep Learning: https://www.youtube.com/watch?v=pO_6Jk0QtKw
+ * How to Use Word Embedding Layers for Deep Learning with Keras: https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
+ * Chars2vec: https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d
 
