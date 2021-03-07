@@ -182,12 +182,30 @@ Useful Links:
 
 Before we understand what is word embedding we need to understand what exactly is embedding and why do we need them?
  * On a very high level we can say that word embedding is a vector representation of the words where each value in the vector has some weight. 
- * One hot encoding is another way to encode the words. But if we try to visualize those encodings, where each occupies a dimension and has nothing to do with the rest of the words. For example word "Hello" and "Hi" as different as "day" and "Country" which is not true.
+ * One hot encoding is another way to encode the words. But if we try to visualize those encodings, where each occupies a dimension and has nothing to do with the rest of the words. For example word "Hello" and "Hi" are as different as "day" and "Country" which is not true.
  * One hot encoding limitations:
    - High dimensional space and sparse:  Feature vector grows with the vocabulary size
  * Benefits of word embedding: 
    - Low-dimensional and dense: Usually between 50-600 dimension
- * The main objective is to have words with similar context occupy close spatial positions. Mathematically, the cosine of the angle between such vectors should be close to 1, i.e. angle close to 0.
+ * The main objective is to have words with similar context occupy close spatial positions. Mathematically, the cosine of the angle between such vectors should be close to 1, i.e. angle close to 0. 
+ * Intuitively, we introduce some dependence of one word on the other words. The words in context of current word would get a greater share of this dependence. In one hot encoding representations, all the words are independent of each other.
+
+How does Word2Vec works?
+ * It is a method to construct those embeddings mentioned above. It can be obtained using two methods both involving Neural Networks:
+    - Common Bag of Words (CBOW): This method takes the context of each word as the input and tries to predict the word corresponding to the context. This can take either a single or multiple context words to predict the target. In this model the hidden layer neurons just copy the weighted sum of inputs to the next layer. There is no activation like sigmoid, tanh or ReLU. The only non-linearity is the softmax calculations in the output layer.
+    
+    ![Simple CBOW model with one word in context](https://user-images.githubusercontent.com/26432753/110235314-4996be00-7f27-11eb-8292-58bbd11c0690.png)
+
+    - Skip Gram: We can use the target word (whose representation we want to generate) to predict the context and in the process, we produce the representations. The hidden layers also have the activation functions unlike CBOW.
+    
+    ![Target Word to predict context words](https://user-images.githubusercontent.com/26432753/110235362-882c7880-7f27-11eb-843c-63ced0afea44.png)
+
+
+Who Wins?
+
+ * Both have their own advantages and disadvantages. According to Mikolov, Skip Gram works well with small amount of data and is found to represent rare words well.
+On the other hand, CBOW is faster and has better representations for more frequent words.
+    
 
 Useful Links:
  * Complete post: https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
