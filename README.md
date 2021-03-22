@@ -208,6 +208,7 @@ On the other hand, CBOW is faster and has better representations for more freque
     
 
 Useful Links:
+ * Word2Vec Explained: https://israelg99.github.io/2017-03-23-Word2Vec-Explained/
  * Complete post: https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
  * char2vec Repo: https://github.com/IntuitionEngineeringTeam/chars2vec
  * Word2Vector vs One-hot: https://www.quora.com/What-is-the-difference-between-using-word2vec-vs-one-hot-embeddings-as-input-to-classifiers
@@ -215,4 +216,6 @@ Useful Links:
  * Word Embedding - Natural Language Processing| Deep Learning: https://www.youtube.com/watch?v=pO_6Jk0QtKw
  * How to Use Word Embedding Layers for Deep Learning with Keras: https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
  * Chars2vec: https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d
+ * Word Embedding Explained: https://israelg99.github.io/2017-03-22-Vector-Representations-of-Words/
+ 
 
