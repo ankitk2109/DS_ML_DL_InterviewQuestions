@@ -217,3 +217,5 @@ Useful Links:
  * Word Embedding - Natural Language Processing| Deep Learning: https://www.youtube.com/watch?v=pO_6Jk0QtKw
  * How to Use Word Embedding Layers for Deep Learning with Keras: https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
  * Chars2vec: https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d
+ * Embedding for spelling correction: https://towardsdatascience.com/embedding-for-spelling-correction-92c93f835d79
+ * 
