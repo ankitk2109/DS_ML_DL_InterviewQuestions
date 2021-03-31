@@ -218,4 +218,8 @@ Useful Links:
  * How to Use Word Embedding Layers for Deep Learning with Keras: https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/
  * Chars2vec: https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d
  * Embedding for spelling correction: https://towardsdatascience.com/embedding-for-spelling-correction-92c93f835d79
- * 
+
+**14 Understanding LSTM**
+
+Useful Link:
+ * https://colah.github.io/posts/2015-08-Understanding-LSTMs/
