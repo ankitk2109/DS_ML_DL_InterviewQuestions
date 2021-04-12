@@ -193,13 +193,8 @@ Before we understand what is word embedding we need to understand what exactly i
 How does Word2Vec works?
  * It is a method to construct those embeddings mentioned above. It can be obtained using two methods both involving Neural Networks:
     - Common Bag of Words (CBOW): This method takes the context of each word as the input and tries to predict the word corresponding to the context. This can take either a single or multiple context words to predict the target. In this model the hidden layer neurons just copy the weighted sum of inputs to the next layer. There is no activation like sigmoid, tanh or ReLU. The only non-linearity is the softmax calculations in the output layer.
-    
-    ![Simple CBOW model with one word in context](https://user-images.githubusercontent.com/26432753/110235314-4996be00-7f27-11eb-8292-58bbd11c0690.png)
 
     - Skip Gram: We can use the target word (whose representation we want to generate) to predict the context and in the process, we produce the representations. The hidden layers also have the activation functions unlike CBOW.
-    
-    ![Target Word to predict context words](https://user-images.githubusercontent.com/26432753/110235362-882c7880-7f27-11eb-843c-63ced0afea44.png)
-
 
 Who Wins?
 
@@ -219,7 +214,52 @@ Useful Links:
  * Chars2vec: https://hackernoon.com/chars2vec-character-based-language-model-for-handling-real-world-texts-with-spelling-errors-and-a3e4053a147d
  * Embedding for spelling correction: https://towardsdatascience.com/embedding-for-spelling-correction-92c93f835d79
 
-**14 Understanding LSTM**
+**14. Understanding LSTM**
 
 Useful Link:
  * https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
+
+**15. What is Feature Scaling, which algorithms are affected by them and what is the difference between normalization and standardization?**
+
+Why do we need Feature Scaling?
+
+* Some machine learning algorithms are sensitive to feature scaling while others are virtually invariant to it. 
+
+* __Gradient based Algorithms__  
+  - Machine learning algorithms like linear regression, logistic regression, neural network, etc. that use gradient descent as an optimization technique require data to be scaled.
+  - _Having features on a similar scale can help the gradient descent converge more quickly towards the minima._
+
+* __Distance based Algorithms__ 
+  -  Distance algorithms like KNN, K-means, and SVM are most affected by the range of features. This is because behind the scenes they are using distances between data points to determine their similarity
+  -  _Therefore, we scale our data before employing a distance based algorithm so that all the features contribute equally to the result._
+
+* __Tree based Algorithms__ 
+  -  Tree-based algorithms, on the other hand, are fairly insensitive to the scale of the features. Think about it, a decision tree is only splitting a node based on a single feature. The decision tree splits a node on a feature that increases the homogeneity of the node. This split on a feature is __not__ influenced by other features.
+  -  _Therefore, tree based algorithms have no effect of the remaining feature on split. This is what makes them invariant to the scale of the features!._
+
+* __What is Normalization?__
+
+Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling.
+
+![image](https://user-images.githubusercontent.com/26432753/114329831-4602e200-9b38-11eb-9e2c-0b1cda4e7bda.png)
+
+* __What is Standardization?__
+
+Standardization is another scaling technique where the values are centered around the mean with a unit standard deviation. This means that the mean of the attribute becomes zero and the resultant distribution has a unit standard deviation.
+
+![image](https://user-images.githubusercontent.com/26432753/114329945-88c4ba00-9b38-11eb-82a0-cfb9e81d2e35.png)
+
+_**Note: in this case, the values are not restricted to a particular range**_
+
+* __When to use Normalization and Standardization?__
+  
+  - Normalization is good to use when you know that the distribution of your data __does not follow a Gaussian distribution__. This can be useful in algorithms that do not assume any distribution of the data like K-Nearest Neighbors and Neural Networks.
+  - Standardization, on the other hand, can be helpful in cases where the data __follows a Gaussian distribution__. However, this __does not have to be necessarily true__. Also, unlike normalization, standardization does not have a bounding range. So, even if you have outliers in your data, they will not be affected by standardization.
+
+* __How to scale train and test data?__
+ 
+  - It is a good practice to fit the scaler on the training data and then use it to transform the testing data. This would avoid any data leakage during the model testing process. Also, the scaling of target values is generally not required.
+
+Useful Link:
+* https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/
